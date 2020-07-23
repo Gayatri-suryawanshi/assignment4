@@ -1,0 +1,30 @@
+  
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Records</title>
+</head>
+<body>
+
+<font color="black"><center><h1>Records</h1></font>
+<table border="1" width="600">
+<tr>
+<td>UserName</td>
+<td>Password</td>
+<td>Phone No.</td>
+<td>Address</td>
+</tr>
+
+{% for User in records %}
+<tr>
+<td>{{ User.username }}</td>
+<td>{{ User.password }}</td>
+<td>{{ User.phone }}</td>
+<td>{{ User.address }}</td>
+</tr>
+{% endfor %}
+
+</table>
+</center>
+</body>
+</html>
